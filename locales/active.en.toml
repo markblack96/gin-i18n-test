@@ -1,0 +1,5 @@
+[index]
+greeting = "Hello"
+[sample-page]
+greeting = "What up"
+someOtherString = "Some other string"

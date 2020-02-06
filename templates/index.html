@@ -1,7 +1,18 @@
 <!doctype html>
 <html>
 <body>
-  <p>{{ .Greeting }}</p>
+  <p>{{ .strings.greeting }}</p>
   <p>{{ .lang }}</p>
+  <div id="language-selector-container">
+    <select id="language-selector">
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+    </select>
+    <script>
+      function changeLang() {
+        let lang = document.getElementById('language-selector').selected.value;
+      }
+    </script>
+  </div>
 </body>
 </html>
